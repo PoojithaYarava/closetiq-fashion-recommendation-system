@@ -8,6 +8,7 @@ let saved = new Set();
 let loading = true;
 let apiError = '';
 const categories = ['All pieces', 'Shirts', 'Trousers', 'Knitwear', 'Accessories', 'Denim', 'Shoes'];
+const apiBaseUrl = import.meta.env.VITE_API_URL || '';
 let activeCategory = 'All pieces';
 let query = '';
 let drawerOpen = false;
@@ -135,7 +136,7 @@ function bindEvents() {
 async function apiRequest(path, options = {}) {
   const headers = { 'Content-Type': 'application/json', ...(options.headers || {}) };
   if (sessionToken) headers.Authorization = `Bearer ${sessionToken}`;
-  const response = await fetch(path, { ...options, headers });
+  const response = await fetch(`${apiBaseUrl}${path}`, { ...options, headers });
   const payload = await response.json();
   if (response.status === 401 && path !== '/api/auth/login' && path !== '/api/auth/register') {
     sessionToken = '';

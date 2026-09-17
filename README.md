@@ -40,3 +40,35 @@ Open `http://127.0.0.1:5173/`.
 Persistent demo state lives in `server/store.json` and can be replaced by a database when authentication and multi-user storage are introduced.
 
 The seeded demo account is `alex@example.com` with password `closetiq`.
+
+## Deploy With Render
+
+Deploy the API first, then the frontend.
+
+### 1. Deploy the API
+
+Create a Render **Web Service** connected to this repository:
+
+- Build command: `npm install`
+- Start command: `npm run api`
+- Environment: `Node`
+
+Render provides the `PORT` environment variable automatically. After deploy, confirm `https://YOUR-API.onrender.com/api/health` returns `{ "status": "ok" }`.
+
+### 2. Deploy the frontend
+
+Create a Render **Static Site** from the same repository:
+
+- Build command: `npm install && npm run build`
+- Publish directory: `dist`
+- Environment variable: `VITE_API_URL=https://YOUR-API.onrender.com`
+
+The variable must be set before the frontend build because Vite embeds it into the generated assets. Redeploy the static site after changing it.
+
+### 3. Verify the deployed app
+
+Open the static-site URL, register or use the demo account, then verify login, profile editing, saving items, and logout. Keep the API service running while using the frontend.
+
+The current JSON store is suitable for a demo deployment. Render's local filesystem is not durable across all service restarts, so use a managed database or persistent disk before treating this as production user data.
+
+For Vercel, deploy the frontend as a Vite project with build command `npm run build`, output directory `dist`, and the same `VITE_API_URL` environment variable. Deploy the API separately on Render or another Node host.
