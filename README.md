@@ -8,6 +8,16 @@ Open the deployed frontend:
 
 https://closetiq-fashion-recommendation-system-1.onrender.com/
 
+## Screenshots
+
+### Login
+
+![ClosetIQ login screen](docs/screenshots/closetiq-login.png)
+
+### Recommendation dashboard
+
+![ClosetIQ recommendation dashboard](docs/screenshots/closetiq-dashboard.png)
+
 ## Run locally
 
 Install dependencies:
@@ -74,6 +84,8 @@ The variable must be set before the frontend build because Vite embeds it into t
 ### 3. Verify the deployed app
 
 Open the live app at https://closetiq-fashion-recommendation-system-1.onrender.com/, register or use the demo account, then verify login, profile editing, saving items, and logout. Keep the API service running while using the frontend.
+
+The deployed API health endpoint is `https://closetiq-api.onrender.com/api/health` when using the current Render service name.
 
 The current JSON store is suitable for a demo deployment. Render's local filesystem is not durable across all service restarts, so use a managed database or persistent disk before treating this as production user data.
 
