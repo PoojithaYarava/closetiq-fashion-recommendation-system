@@ -2,6 +2,12 @@
 
 ClosetIQ is a fashion recommendation dashboard with a Vite frontend and a small Node API backed by a JSON store.
 
+## Live Application
+
+Open the deployed frontend:
+
+https://closetiq-fashion-recommendation-system-1.onrender.com/
+
 ## Run locally
 
 Install dependencies:
@@ -67,7 +73,7 @@ The variable must be set before the frontend build because Vite embeds it into t
 
 ### 3. Verify the deployed app
 
-Open the static-site URL, register or use the demo account, then verify login, profile editing, saving items, and logout. Keep the API service running while using the frontend.
+Open the live app at https://closetiq-fashion-recommendation-system-1.onrender.com/, register or use the demo account, then verify login, profile editing, saving items, and logout. Keep the API service running while using the frontend.
 
 The current JSON store is suitable for a demo deployment. Render's local filesystem is not durable across all service restarts, so use a managed database or persistent disk before treating this as production user data.
 
