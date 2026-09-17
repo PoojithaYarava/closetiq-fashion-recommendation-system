@@ -1,0 +1,138 @@
+{
+  "profile": {
+    "name": "Alex Morgan",
+    "initials": "AM",
+    "dateLabel": "Thursday, September 18",
+    "styleSignal": "You're reaching for softer textures lately.",
+    "discoverCount": 12,
+    "wardrobeCount": 38,
+    "savedCount": 8
+  },
+  "products": [
+    {
+      "id": 1,
+      "name": "Linen camp shirt",
+      "category": "Shirts",
+      "style": "Relaxed",
+      "color": "Oat",
+      "price": 68,
+      "image": "https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=900&q=85",
+      "match": 96,
+      "note": "Works with 8 pieces in your wardrobe"
+    },
+    {
+      "id": 2,
+      "name": "Wide-leg pleated trouser",
+      "category": "Trousers",
+      "style": "Polished",
+      "color": "Ink",
+      "price": 112,
+      "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=900&q=85",
+      "match": 92,
+      "note": "A strong anchor for your weekday edit"
+    },
+    {
+      "id": 3,
+      "name": "Soft cotton cardigan",
+      "category": "Knitwear",
+      "style": "Everyday",
+      "color": "Sage",
+      "price": 84,
+      "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=900&q=85",
+      "match": 89,
+      "note": "Pairs with your most-worn denim"
+    },
+    {
+      "id": 4,
+      "name": "Sculpted leather tote",
+      "category": "Accessories",
+      "style": "Polished",
+      "color": "Cognac",
+      "price": 148,
+      "image": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=85",
+      "match": 87,
+      "note": "Adds warmth to a neutral base"
+    },
+    {
+      "id": 5,
+      "name": "Relaxed barrel jean",
+      "category": "Denim",
+      "style": "Relaxed",
+      "color": "Washed blue",
+      "price": 96,
+      "image": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=85",
+      "match": 85,
+      "note": "The silhouette your closet is missing"
+    },
+    {
+      "id": 6,
+      "name": "Square-toe slingback",
+      "category": "Shoes",
+      "style": "Polished",
+      "color": "Cherry",
+      "price": 124,
+      "image": "https://images.unsplash.com/photo-1596703263926-eb0762ee17e4?auto=format&fit=crop&w=900&q=85",
+      "match": 82,
+      "note": "A confident finish for dinner plans"
+    }
+  ],
+  "wardrobeIds": [
+    1,
+    2,
+    3
+  ],
+  "savedIds": [
+    2,
+    3
+  ],
+  "feedback": [],
+  "users": [
+    {
+      "id": "user-alex",
+      "email": "alex@example.com",
+      "passwordHash": "e97fdc18ecd738ee2db9d2a0bd3cff7e:bba06f0c8dce90df1e09f4c23a90bc13ed51d115c87bdae20be6372304a7b1c6bbce925283a7dcc50ed92d92aa5e7ec788ad1576286506db0f492bd9b7dd7134",
+      "profile": {
+        "name": "Alex Morgan",
+        "initials": "AM",
+        "dateLabel": "Thursday, September 18",
+        "styleSignal": "You're reaching for softer textures lately.",
+        "discoverCount": 12,
+        "wardrobeCount": 38,
+        "savedCount": 8
+      },
+      "wardrobeIds": [
+        1,
+        2,
+        3
+      ],
+      "savedIds": [
+        2,
+        3
+      ],
+      "feedback": []
+    },
+    {
+      "id": "user-114dac79ae2a335f",
+      "email": "test123@gmail.com",
+      "passwordHash": "1ea12a22f2e7f0596537f5512a750178:4e28da5a9ba4500be885d680933931bee307498a976b7e73eb10139db46eddab572d514453a4b9786554f2d3190679697a3d4ba51e9088541b37f33de461d3cf",
+      "profile": {
+        "name": "Test",
+        "initials": "T",
+        "dateLabel": "Thursday, September 18",
+        "styleSignal": "You're reaching for softer textures lately.",
+        "discoverCount": 12,
+        "wardrobeCount": 38,
+        "savedCount": 8
+      },
+      "wardrobeIds": [],
+      "savedIds": [],
+      "feedback": []
+    }
+  ],
+  "sessions": {
+    "a6a66b29f190faaa00ddd56cc99332c08a697a7bcb058e23fc7e9bc1bde5102f": {
+      "userId": "user-114dac79ae2a335f",
+      "expiresAt": 1792249354977
+    }
+  }
+}
